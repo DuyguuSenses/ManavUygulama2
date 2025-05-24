@@ -84,3 +84,6 @@ switch (cevap)
         break;
 
 }
+
+//if else daha mantıklı çünkü switch yapısında case kısımlarına değişken yazamıyoruz sabit bir değer olmak zorunda ancak if else yapısında değişken üzerinden kontrol sağlanabildiği için kontrol sağlamak daha kolay olacaktır.
+
