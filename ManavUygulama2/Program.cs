@@ -36,6 +36,7 @@ int digerfiyat = 4;
 Console.Write("Hangi meyveyi satın almak istersiniz ? (Elma/Armut/Çilek/Muz/Diğer):");
 string cevap = (Console.ReadLine()).ToLower();
 
+//if-else
 
 if (cevap == elma)
 {
@@ -49,5 +50,37 @@ else if (cevap == cilek)
 {
     Console.WriteLine($"Seçtiğiniz meyvenin fiyatı:{cilekfiyat} TL");
 }
+else if(cevap==muz)
+{
+    Console.WriteLine($"Seçtiğiniz meyvenin fiyatı:{muzfiyat} TL");
+
+}
 else
     Console.WriteLine($"Seçtiğiniz meyvenin fiyatı:{digerfiyat} TL");
+
+
+
+//Switch-case
+
+switch (cevap)
+{
+    case "elma":
+        Console.WriteLine($"Seçtiğiniz meyvenin fiyatı:{elmafiyat} TL");
+        break;
+
+    case "armut":
+        Console.WriteLine($"Seçtiğiniz meyvenin fiyatı:{armutfiyat} TL");
+        break;
+
+    case "çilek":
+        Console.WriteLine($"Seçtiğiniz meyvenin fiyatı:{cilekfiyat} TL");
+        break;
+
+    case "muz":
+        Console.WriteLine($"Seçtiğiniz meyvenin fiyatı:{muzfiyat} TL");
+        break;
+    default:
+        Console.WriteLine($"Seçtiğiniz meyvenin fiyatı:{digerfiyat} TL");
+        break;
+
+}
